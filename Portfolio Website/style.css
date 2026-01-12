@@ -1,0 +1,396 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#logo {
+    height: 100px;
+    width: 150px;
+}
+
+.container {
+    padding: 5px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after {
+    cursor: pointer;
+    content: '';
+    left: 0px;
+    bottom: -6px;
+    background: #ff004f;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.Header-Text {
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.Header-Text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.Header-Text h1 span {
+    color: #ff004f;
+}
+/*------About------*/
+
+#about{
+    padding: 80px 0px;
+    color: #ababab;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-between;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+}
+.tab-title{
+  display: flex;
+  margin: 20px 0px 40px;
+}
+.tab-links{
+    margin-right: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #ff004f;
+    left: 0px;
+    bottom: -8px;
+    position: absolute;
+    transform: 0.5s;
+}
+.tab-links.active::after{
+    width: 50%;
+
+}
+.tab-contains ul  li {
+    list-style: none;
+    margin: 10px 0px;
+}
+.tab-contains ul  li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+.tab-contains{
+    display: none;
+}
+.tab-contains.active-tab{
+    display: block;
+}
+
+/* ---------- Services-------- */
+#services{
+    padding: 30px 0px;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: #262626;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 40px;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration: none;
+    color:#ababab;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.service-list div:hover{
+    background: #ff004f;
+    transform: translateY(10px);
+}
+/* -------------------Portfolio section----------- */
+#portfolio{
+    padding: 50px 0px;
+}
+
+
+.workList{
+      display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.5),#ff004f);
+    border-radius: 10px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+
+}
+.layer h3{
+   
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+     
+    color: white;
+}
+.btn:hover{
+    background: #ff004f;
+    color: #fff;
+    transition: 0.5s;
+}
+/* ---------Contatct SEction--- */
+.col1-l{
+    flex-basis: 35%;
+}
+.col2-r{
+    flex-basis: 60%;
+}
+.col1-l  p{
+    margin-top: 30px;
+}
+.col1-l p i{
+    color:#ff004f ;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    color: #ababab;
+    margin-right: 15px;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(5px)
+
+}
+.btn.btn2{
+    display: inline-block;
+    background:#ff004f
+}
+.col2-r form{
+width: 100%;
+}
+
+form input , form textarea{
+    width: 100%;
+    border: 0px;
+    padding: 15px;
+    margin: 15px ;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: 0px;
+    background: #262626;
+}
+ form .btn2{
+    font-size: 18px;
+    margin: 20px;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+.Thanks{
+    width: 100%;
+    padding: 20px 0px;
+    margin-top: 15px;
+    text-align: center;
+    background: #262626;
+    font-weight: 300;
+}
+/* _--------- Media queries------- */
+nav .fa-solid{
+display: none;
+}
+@media only screen and (max-width: 600px)
+{
+     #header{
+        background-image: url(images/phone-background.png);
+     }
+     .Header-Text{
+        margin-top: 100%;
+        font-size: 14px;
+     }
+     .Header-Text h1{
+        font-size: 30px;
+     }
+     nav .fa-solid{
+        display: block;
+        font-size: 15px
+     }
+     nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition:right 0.5s;
+     }
+     nav ul li{
+        display: block;
+        margin: 30px ;
+     }
+     nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+     }
+     .subtitle{
+        font-size: 40px;
+     }
+     .col1 ,.col2{
+flex-basis: 100%;
+     }
+
+.col1{
+    margin-bottom: 30px;
+}
+.col2{
+    font-size: 14px;
+}
+.tab-links{
+   font-size: 15px;
+   margin-right: 20px;
+}
+.col1-l,.col2-r{
+    flex-basis: 100%;
+}
+.Thanks{
+    font-size: 14px;
+}
+}

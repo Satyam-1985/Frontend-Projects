@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/c2a5825865.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.2.png" id="logo" alt="">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"  onclick="openMenu()"></i>
+            </nav>
+            <div class="Header-Text">
+                <p> Frontend Developer</p>
+                <h1> Hi,I'm <span>Satyam</span><br>Yadav From Indore </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----About Section--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/personal/photo.png.png">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle"> About Me</h1>
+                    <p>I am a 6th semester B.Tech Computer Science student with a strong interest in web development and software engineering. I enjoy building real-world projects using modern technologies and continuously improving my problem-solving skills.
+                        I have hands-on experience in web development using HTML, CSS, JavaScript, and backend technologies, and I have applied this knowledge while working on a major project. Through this project, I focused on building efficient, scalable, and user-friendly applications. My goal is to become a skilled software engineer and secure a role in a reputed tech company where I can grow professionally and contribute to impactful products.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active" onclick="openTab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Education')"">Education</p>
+                  
+                   </div>
+                   <div class=" tab-contains active-tab" id="Skills">
+                        <ul>
+                            <li><span>C/C++, java</span><br>Programing Language</li>
+                            <li><span>Web Development</span><br>Building Website</li>
+                            <li><span>DSA</span><br>Problem Solving</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>10 Pass 84%</li>
+                            <li><span>2022</span><br>12 pass 89 </li>
+                            <li><span>2023</span><br>First Year CGPA 8.7</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-------Service section----->
+    
+    <div id="service">
+        <div class="container">
+            <h1 class="subtitle"> My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> I design and develop responsive, user-friendly websites using HTML, CSS, and JavaScript.
+            I focus on clean UI, modern layouts, and smooth user experience across devices.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Project List</h2>
+                    <p> I have worked on multiple web-based projects including a major project,
+            where I applied frontend and backend concepts to build scalable
+            and real-world applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Hackathon </h2>
+                    <p> I actively participate in hackathons and coding events to improve
+            my problem-solving skills, teamwork, and ability to build solutions
+            under time constraints.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Portfolio ---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle"> My Work</h1>
+            <div class="workList">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Spotify Playlist</h3>
+                        <p>The app which Provide music acc to your mood.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Qr Code Generater</h3>
+                        <p>The app which generate Qr for anything </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Image Search Engine</h3>
+                        <p>The app which provide beautiful images.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ---------Contact Section--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col1-l">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sy6236666@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>9302855393</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://in.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                       <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="col2-r">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter the Name" required>
+                        <input type="email" name="Email" placeholder="Enter the Email" required>
+                        <textarea name = "Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     <div class="Thanks">
+        <p>Thank You Everyone</p>
+     </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyuSyGoVm-v-sqveVxU3m5wOrb7CPuu-2e64L6yt5qf4nIDC5MoX6M7oAB1ILkJ9ZLibQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
