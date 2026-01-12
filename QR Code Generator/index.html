@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="head">Enter Your Text or Url</h1>
+            <input type="text" placeholder="Text or Url" spellcheck="false" id="qrtext">
+            <div id="img_box">
+                <img src= " " id="qrimg" >
+            </div>
+
+            <button onclick= "addfun()" >Generate QR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
